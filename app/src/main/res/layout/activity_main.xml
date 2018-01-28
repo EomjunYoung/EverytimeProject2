@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.zeany.everytimeproject.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:background="@drawable/gradation">
+        <ImageView
+            android:id="@+id/imagePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitStart"/>
+        <TextView
+            android:id="@+id/textInfo"
+            android:layout_toRightOf="@id/imagePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="이름\n학번\n학년\n전공"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/textUser"
+            android:layout_toRightOf="@id/textInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_toRightOf="@id/imagePicture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_main_logo"
+            android:scaleType="fitCenter"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
