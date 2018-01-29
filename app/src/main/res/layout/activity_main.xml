@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="net.zeany.everytimeproject.MainActivity">
@@ -42,4 +43,47 @@
 
     </RelativeLayout>
 
-</android.support.constraint.ConstraintLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="62">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="0,1">
+            <TableRow
+                android:layout_weight="1"
+                android:weightSum="2">
+                <Button
+                    android:id="@+id/buttonTimeTable"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="서적 구매/판매"/>
+                <Button
+                    android:id="@+id/buttonSubject"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="시간표 짜기"/>
+            </TableRow>
+            <TableRow
+                android:layout_weight="1"
+                android:weightSum="2">
+                <Button
+                    android:id="@+id/buttonLecture"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="챗봇으로 물어보기"/>
+                <Button
+                    android:id="@+id/buttonBulletinBoard"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="WHAT!!?"/>
+            </TableRow>
+        </TableLayout>
+    </FrameLayout>
+
+</LinearLayout>
